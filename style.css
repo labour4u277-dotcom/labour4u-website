@@ -1,0 +1,321 @@
+/* ==========================
+   Labour4U Official Website
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+}
+
+.wrap{
+width:92%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HEADER */
+
+header{
+background:#fff;
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+header .wrap{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.brand img{
+width:60px;
+}
+
+.brand h2{
+color:#2563eb;
+font-size:28px;
+margin-bottom:3px;
+}
+
+.brand small{
+color:#666;
+font-size:14px;
+}
+
+nav{
+display:flex;
+gap:28px;
+}
+
+nav a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#1da1f2,#2563eb);
+padding:90px 0;
+color:white;
+}
+
+.hero-flex{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+min-width:320px;
+}
+
+.hero h1{
+font-size:54px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:19px;
+max-width:560px;
+opacity:.95;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+background:white;
+color:#2563eb;
+padding:15px 35px;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,.20);
+}
+
+/* SCREENSHOTS */
+
+.hero-right{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.screenshots{
+display:flex;
+gap:18px;
+justify-content:center;
+align-items:flex-end;
+flex-wrap:wrap;
+}
+
+.phone{
+text-align:center;
+color:white;
+font-weight:bold;
+}
+
+.phone img{
+width:140px;
+border-radius:22px;
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+transition:.3s;
+background:#fff;
+}
+
+.phone img:hover{
+transform:translateY(-10px) scale(1.04);
+}
+
+.phone span{
+display:block;
+margin-top:10px;
+}
+
+/* SECTION */
+
+section{
+padding:80px 0;
+}
+
+.light{
+background:#eef3fb;
+}
+
+h2{
+font-size:40px;
+text-align:center;
+color:#2563eb;
+margin-bottom:25px;
+}
+
+.center{
+text-align:center;
+max-width:900px;
+margin:auto;
+font-size:18px;
+color:#555;
+}
+
+/* GRID */
+
+.grid{
+margin-top:45px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:28px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+padding:35px 25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card{
+font-size:48px;
+}
+
+.card h3{
+font-size:24px;
+margin:15px 0;
+color:#222;
+}
+
+.card p{
+font-size:16px;
+color:#666;
+}
+
+/* CONTACT */
+
+.contact-box{
+background:white;
+padding:40px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+max-width:700px;
+margin:auto;
+text-align:center;
+}
+
+.contact-box p{
+font-size:19px;
+margin:12px 0;
+}
+
+/* FOOTER */
+
+footer{
+background:#111827;
+color:white;
+padding:45px 20px;
+text-align:center;
+}
+
+footer h3{
+font-size:28px;
+margin-bottom:15px;
+}
+
+footer p{
+margin:8px 0;
+}
+
+footer a{
+color:#66c3ff;
+text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+header .wrap{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+padding:60px 0;
+text-align:center;
+}
+
+.hero-flex{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+margin:auto;
+font-size:17px;
+}
+
+.phone img{
+width:105px;
+}
+
+h2{
+font-size:32px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+}
